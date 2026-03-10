@@ -8,13 +8,13 @@ https://github.com/kevinsantiagomatos/Azure-Function-Vision-Demo
 
 ## Architecture
 ```mermaid
-flowchart LR
-  Uploader([User upload]) -->|blob trigger| Func[Azure Function\nBlobProcessor]
-  Func -->|thumbnail| Storage[(Storage\nimages/thumbnails)]
+flowchart TD
+  Uploader[User upload] -->|blob trigger| Func[Azure Function BlobProcessor]
+  Func -->|thumbnail| Storage[(Storage: images/thumbnails)]
   Func --> Vision[Azure AI Vision]
-  Func --> Cosmos[(Cosmos DB\nserverless)]
-  API[Azure Function\nApiList] --> Cosmos
-  Gallery[Static Web App (optional)] -->|HTTP| API
+  Func --> Cosmos[(Cosmos DB serverless)]
+  API[Function ApiList] --> Cosmos
+  Gallery["Static Web App (optional)"] -->|HTTP| API
 ```
 
 ## Security
