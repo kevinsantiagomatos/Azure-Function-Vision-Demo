@@ -6,7 +6,7 @@ Serverless Azure reference project: upload images → Azure Function creates thu
 - `infra/` – Terraform for all Azure resources (Function App, Storage, Vision, Cosmos, Key Vault, networking).
 - `function_app/` – Azure Functions (blob trigger + list API) in Python.
 - `frontend/` – Vite/React gallery UI (optional).
-- `docs/one-pager.md` – Portfolio one-pager (export to PDF).
+- `docs/one-pager.md` – Portfolio one-pager.
 
 ## Deployment (optional, in the reader’s subscription)
 > Nothing is deployed by default. Cloning/reading is $0. Any deployment should be done in the reader’s own Azure subscription and torn down after demos.

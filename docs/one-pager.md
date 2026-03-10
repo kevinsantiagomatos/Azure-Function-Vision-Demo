@@ -47,5 +47,4 @@ terraform destroy -var-file=dev.tfvars
 - Observability basics with Application Insights.
 - Cost-aware architecture and teardown discipline.
 
-## Export to PDF (optional)
-- View in GitHub/editor and Print → Save as PDF for a static copy.
+
