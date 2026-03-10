@@ -18,7 +18,7 @@
 - `infra/terraform/dev.tfvars` – Dev defaults.
 - `infra/terraform/outputs.tf` – Handy connection info.
 
-## Deploy (when you choose to)
+## Deploy (if you choose to, on your own subscription)
 > Nothing is deployed by default. Run apply only for short demos, then destroy the resource group to avoid costs.
 ```bash
 cd infra/terraform
