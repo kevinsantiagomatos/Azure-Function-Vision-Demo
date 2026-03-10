@@ -29,7 +29,7 @@ flowchart TD
 - Optional budget alert variable.
 - Safe default: project is **not deployed** until you run `terraform apply`.
 
-## How to run (optional demo, in your own subscription) and tear down
+## How to run (optional demo in the reader’s subscription) and tear down
 ```bash
 cd infra/terraform
 terraform init
@@ -48,4 +48,4 @@ terraform destroy -var-file=dev.tfvars
 - Cost-aware architecture and teardown discipline.
 
 ## Export to PDF (optional)
-- View this file in GitHub or your editor and Print → Save as PDF if you want a static copy.
+- View in GitHub/editor and Print → Save as PDF for a static copy.

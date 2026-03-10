@@ -18,8 +18,8 @@
 - `infra/terraform/dev.tfvars` – Dev defaults.
 - `infra/terraform/outputs.tf` – Handy connection info.
 
-## Deploy (if you choose to, on your own subscription)
-> Nothing is deployed by default. Run apply only for short demos, then destroy the resource group to avoid costs.
+## Deploy (optional, in the reader’s subscription)
+> Nothing is deployed by default. Apply only for short demos in your own subscription, then destroy the resource group.
 ```bash
 cd infra/terraform
 terraform fmt
@@ -36,7 +36,7 @@ terraform destroy -var-file=dev.tfvars
 
 ## Cost & safety
 - Best $0 option: keep it undeployed and share code/screenshots.
-- If you deploy on a trial, delete the RG after demo. Private endpoints incur small hourly cost; Vision charges per image; other services are serverless.
+- If deployed, delete the RG after the demo. Private endpoints incur small hourly cost; Vision charges per image; other services are serverless.
 - To minimize spend during demos: set `vision_sku = "F0"`, set `public_network_access_enabled = true` on Storage/Cosmos/KV, and comment out private endpoints/DNS blocks.
 
 ## Networking summary

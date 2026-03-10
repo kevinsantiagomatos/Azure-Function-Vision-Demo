@@ -8,8 +8,8 @@ Serverless Azure reference project: upload images → Azure Function creates thu
 - `frontend/` – Vite/React gallery UI (optional).
 - `docs/one-pager.md` – Portfolio one-pager (export to PDF).
 
-## If you choose to deploy (your own subscription)
-> Not deployed by default. Cloning/reading is $0. Deploy only on your own subscription, then delete to avoid costs.
+## Deployment (optional, in the reader’s subscription)
+> Nothing is deployed by default. Cloning/reading is $0. Any deployment should be done in the reader’s own Azure subscription and torn down after demos.
 
 ```bash
 cd infra/terraform
@@ -22,7 +22,7 @@ terraform destroy -var-file=dev.tfvars
 ```
 
 ## Cost & safety notes
-- $0 to clone/read. No resources are running.
-- If you deploy (on your own subscription), destroy the resource group after demos. Private endpoints and Vision calls consume credit; Function/Cosmos are serverless.
+- $0 to clone/read; no resources are running.
+- If deployed, delete the resource group after demos. Private endpoints and Vision calls consume credit; Function/Cosmos are serverless.
 
 More detail: see `infra/README.md`. Portfolio summary: `docs/one-pager.md`.
